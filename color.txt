@@ -1,0 +1,19 @@
+#1e3a8a primary
+
+#2274D4  -- secondary
+
+
+#000000  -- black
+
+
+#FFFFFF  --white
+
+
+#00D0FF  -- subscribe
+
+
+#0292C5  --logo/links
+
+#1D4ED8  -- heading
+
+#2563EB  -- description
