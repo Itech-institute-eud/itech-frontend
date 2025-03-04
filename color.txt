@@ -17,3 +17,13 @@
 #1D4ED8  -- heading
 
 #2563EB  -- description
+
+
+Diploma in Accounting
+A diploma in accounting provides students with foundational knowledge in financial principles, preparing them for a successful career in finance and business.
+
+Digital Marketing
+Explore the essentials of digital marketing, mastering strategies for online engagement, brand growth, and data-driven decision-making.
+
+Advance excel
+Master Excel with our comprehensive course that caters to beginners and advanced users alike, emphasizing practical skills and real-world applications.
