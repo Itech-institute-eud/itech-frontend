@@ -76,7 +76,6 @@ const Navbar = () => {
           </div>
           <div className="lg:hidden p-0.5">
             <Button
-              className="border-[1px] border-primary-forground"
               onClick={() => console.log("I am button.")}
               variant="secondary"
               size="icon"

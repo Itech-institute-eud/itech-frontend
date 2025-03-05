@@ -11,6 +11,7 @@ import VideoComponent from "@/components/custom/videoComponent";
 import Card from "@/components/custom/card";
 
 import ExploreBtn from "@/components/custom/exploreButtton";
+import Numbers from "@/components/custom/numbers";
 
 const data = [
   {
@@ -48,6 +49,7 @@ export default function Home() {
           ))}
         </div>
         <ExploreBtn />
+        <Numbers />
         {/* <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>Is it accessible?</AccordionTrigger>
