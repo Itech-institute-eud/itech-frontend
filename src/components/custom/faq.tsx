@@ -45,11 +45,11 @@ const questions = [
 const Faq = () => {
   return (
     <Container className="h-full w-full flex justify-center items-center">
-      <div className="flex flex-col items-center justify-center  w-full bg-black/50 py-4 px-5 md:px-10 rounded-2xl">
+      <div className="flex flex-col items-center justify-center  w-full bg-black/30 py-4 px-5 md:px-10 rounded-2xl shadow-lg">
         <div>
           <Heading title={"Commonly asked questions"} />
         </div>
-        <div className="bg-white/50 w-full lg:w-[50%] p-4 rounded-lg border-[1px] shadow-lg">
+        <div className="bg-white/50 w-full lg:w-[50%] p-4 rounded-lg border-[1px] ">
           <Accordion
             type="single"
             collapsible
