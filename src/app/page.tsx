@@ -7,6 +7,7 @@ import ExploreBtn from "@/components/custom/exploreButtton";
 import Numbers from "@/components/custom/numbers";
 import Partners from "@/components/custom/parteners";
 import Marquee from "@/components/custom/marquee";
+import Faq from "@/components/custom/faq";
 
 const data = [
   {
@@ -47,6 +48,7 @@ export default function Home() {
         <Numbers />
         <Heading title={"Our Premium Partners"} />
         <Marquee />
+        <Faq />
       </div>
     </div>
   );
