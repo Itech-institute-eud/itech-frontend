@@ -9,7 +9,7 @@ const data = [
     num: (
       <span>
         {" "}
-        <CountUp start={950} end={1000} duration={4} /> +
+        <CountUp start={9990} end={10000} duration={4} /> +
       </span>
     ),
   },
@@ -26,7 +26,7 @@ const data = [
 
     num: (
       <span>
-        <CountUp start={4700} end={5000} duration={4} /> +
+        <CountUp start={4950} end={5000} duration={4} /> +
       </span>
     ),
   },
@@ -42,7 +42,7 @@ const Numbers = () => {
       <div className="w-full lg:w-[95%] h-[100px]  lg:h-[181px] rounded-[50px] bg-secondary-forground  mx-auto flex items-center justify-evenly">
         {data.map((item, i) => (
           <div key={i} className="flex flex-col items-center justify-center">
-            <span className="text-[16px] md:text-[20px] lg:text-[40px] font-semibold md:font-bold text-center">
+            <span className="text-[16px] md:text-[20px] lg:text-[40px]  font-bold text-center">
               {item.num}
             </span>
             <p className="text-[8px] md:text-[10px] lg:text-lg text-center">
