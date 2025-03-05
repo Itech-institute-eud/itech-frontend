@@ -1,10 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 import Description from "@/components/custom/description";
 import Heading from "@/components/custom/heading";
 import VideoComponent from "@/components/custom/videoComponent";
@@ -12,6 +5,8 @@ import Card from "@/components/custom/card";
 
 import ExploreBtn from "@/components/custom/exploreButtton";
 import Numbers from "@/components/custom/numbers";
+import Partners from "@/components/custom/parteners";
+import Marquee from "@/components/custom/marquee";
 
 const data = [
   {
@@ -50,14 +45,8 @@ export default function Home() {
         </div>
         <ExploreBtn />
         <Numbers />
-        {/* <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion> */}
+        <Heading title={"Our Premium Partners"} />
+        <Marquee />
       </div>
     </div>
   );
