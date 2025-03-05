@@ -1,20 +1,20 @@
 import Container from "./container";
 
 interface HeadingProps {
-  title: String
+  title: String;
+  className?: string;
 }
 
-const Heading = ({title}:HeadingProps)=>{
-
-
+const Heading = ({ title, className }: HeadingProps) => {
   return (
-  <Container className="mt-3">
-  <h1 className="font-inter text-white font-extrabold text-2xl lg:text-4xl text-center">{title}</h1>
-  </Container>  
-)
-}
+    <Container className="mt-3">
+      <h1
+        className={`font-inter text-white font-extrabold text-2xl lg:text-4xl text-center ${className}`}
+      >
+        {title}
+      </h1>
+    </Container>
+  );
+};
 
 export default Heading;
-
-
-

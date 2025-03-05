@@ -8,6 +8,7 @@ import Numbers from "@/components/custom/numbers";
 import Partners from "@/components/custom/parteners";
 import Marquee from "@/components/custom/marquee";
 import Faq from "@/components/custom/faq";
+import Contact from "@/components/custom/contact";
 
 const data = [
   {
@@ -49,6 +50,7 @@ export default function Home() {
         <Heading title={"Our Premium Partners"} />
         <Marquee />
         <Faq />
+        <Contact />
       </div>
     </div>
   );
