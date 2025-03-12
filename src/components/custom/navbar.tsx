@@ -1,12 +1,14 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import MainLogo from "../../../public/icons/mainLogo";
 import Container from "./container";
 import { Button } from "../ui/button";
+import { div } from "framer-motion/client";
 
 const links = [
   {
@@ -38,7 +40,8 @@ const links = [
 const Navbar = () => {
   const path = usePathname();
 
-  console.log(path);
+  const [show, setShow] = useState(false);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -61,11 +64,14 @@ const Navbar = () => {
           : "bg-black"
       } transition-colors  sticky top-0 z-[1000]`}
     >
+      {/* NAVBAR START */}
       <nav className=" w-full h-[70px] flex  lg:justify-center lg:items-center ">
         <div className="w-full flex justify-between lg:justify-center  items-center">
+          {/* MAIN LOGO */}
           <div>
             <MainLogo />
           </div>
+          {/* LINKS */}
           <div className="hidden lg:flex w-full justify-evenly items-center">
             {links.map((item, i) => (
               <Link
@@ -79,15 +85,51 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
+
+          {/* MOBILE NAVBAR */}
+
           <div className="lg:hidden p-0.5">
             <Button
-              onClick={() => console.log("I am button.")}
+              onClick={() => setShow((prev) => !prev)}
               variant="secondary"
               size="icon"
             >
               <Menu className="text-white" />
             </Button>
           </div>
+
+          {show && (
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: show ? 0 : "100%" }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="h-60 w-40 absolute  top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg border-white/30 shadow-lg"
+            >
+              <div className="w-full flex justify-end p-0">
+                <Button
+                  className="p-0"
+                  size={"icon"}
+                  onClick={() => setShow((prev) => !prev)}
+                >
+                  <X />
+                </Button>
+              </div>
+
+              <div className=" flex flex-col space-y-4 h-full">
+                {links.map((item, i) => (
+                  <Link
+                    className={`text-[10px] uppercase  font-semibold ${
+                      path == item.link ? "text-primary-links" : "text-black"
+                    }`}
+                    key={i}
+                    href={item.link}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </nav>
     </Container>

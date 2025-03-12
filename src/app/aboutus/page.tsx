@@ -87,8 +87,8 @@ const page = () => {
       </div>
 
       <div className=" flex flex-col md:flex-row justify-between items-center my-4">
-        <OtherBranch />
-        <OtherBranch />
+        <OtherBranch title="Main Branch" />
+        <OtherBranch title="Other Branch" />
       </div>
     </Container>
   );
