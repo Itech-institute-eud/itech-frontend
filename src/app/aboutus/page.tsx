@@ -1,13 +1,14 @@
 import Container from "@/components/custom/container";
 import Description from "@/components/custom/description";
 import Heading from "@/components/custom/heading";
+import OtherBranch from "@/components/custom/other_branch";
 import Image from "next/image";
 
 const page = () => {
   return (
     <Container>
       <div className=" flex flex-col gap-5">
-        <img src="/images/aboutus.png" alt="aboutus" className=" flex-1/2" />
+        <img src="/images/aboutus.png" alt="aboutus" className="lg:h-[600px]" />
         <p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
           Established in 1997, I-Tech Institute of Computers is a premier IT
           training organization with over 25 years of excellence in providing
@@ -27,7 +28,7 @@ const page = () => {
           rapidly evolving tech landscape.
         </p>
       </div>
-      <div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5">
+      <div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5 border-[1px] border-primary-links">
         <Heading title={"DIRECTOR’S DESK"} className="mb-2" />
         <div className="flex flex-col md:flex-row  justify-center md:gap-5 items-center">
           <div className="relative lg:w-[621px] w-[300px] lg:h-[504px] h-[300px]">
@@ -83,6 +84,11 @@ const page = () => {
             objectFit="cover"
           />
         </div>
+      </div>
+
+      <div className=" flex flex-col md:flex-row justify-between items-center my-4">
+        <OtherBranch />
+        <OtherBranch />
       </div>
     </Container>
   );
