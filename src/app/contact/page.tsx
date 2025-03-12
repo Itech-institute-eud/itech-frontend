@@ -34,6 +34,15 @@ const page = () => {
         {/* RIGHT SIDE */}
         <div className="flex-1/3">
           <form>
+            <div className="hidden lg:block lg:relative">
+              <Image
+                src="/images/Letter-Sending.png"
+                alt="Letter-Sending"
+                width={250}
+                height={250}
+                className="absolute -right-5 -top-30"
+              />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2  gap-5 p-2">
               <CustomInput title="First Name" />
               <CustomInput title="Last Name" />
