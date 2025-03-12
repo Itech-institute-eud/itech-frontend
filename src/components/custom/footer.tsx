@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           <div className="flex-1/2  flex items-center justify-center gap-6 ">
             {links["lower-footer"][2].map((item: any, i: any) => (
-              <span className="cursor-pointer" key={i}>
+              <span className="cursor-pointer " key={i}>
                 {item}
               </span>
             ))}

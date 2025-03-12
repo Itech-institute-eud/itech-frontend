@@ -1,5 +1,5 @@
 "use client";
-
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -19,15 +19,15 @@ const links = [
   },
   {
     title: "Teachnical cources",
-    link: "/teachnical-cources",
+    link: "/cources",
   },
   {
-    title: "Iteach soulutions",
-    link: "/iteach-solutions",
+    title: "Itech soulutions",
+    link: "/itech-solutions",
   },
   {
     title: "IT CERTIFIED MILITARY LIST",
-    link: "/it-certificates-military-list",
+    link: "/certificate",
   },
   {
     title: "CONTACT",
@@ -36,6 +36,9 @@ const links = [
 ];
 
 const Navbar = () => {
+  const path = usePathname();
+
+  console.log(path);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -66,7 +69,9 @@ const Navbar = () => {
           <div className="hidden lg:flex w-full justify-evenly items-center">
             {links.map((item, i) => (
               <Link
-                className="text-sm text-white uppercase  font-semibold"
+                className={`text-sm  uppercase  font-semibold ${
+                  path == item.link ? "text-primary-links" : "text-white"
+                }`}
                 key={i}
                 href={item.link}
               >
