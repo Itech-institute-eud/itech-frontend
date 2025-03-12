@@ -62,7 +62,7 @@ const Navbar = () => {
         isScrolled
           ? "bg-white/20 backdrop-blur-lg border-white/30 shadow-lg"
           : "bg-black"
-      } transition-colors  sticky top-0 z-[1000]`}
+      } transition-colors  sticky top-0 z-40`}
     >
       {/* NAVBAR START */}
       <nav className=" w-full h-[70px] flex  lg:justify-center lg:items-center ">
@@ -88,22 +88,24 @@ const Navbar = () => {
 
           {/* MOBILE NAVBAR */}
 
-          <div className="lg:hidden p-0.5">
-            <Button
-              onClick={() => setShow((prev) => !prev)}
-              variant="secondary"
-              size="icon"
-            >
-              <Menu className="text-white" />
-            </Button>
-          </div>
+          {!show && (
+            <div className="lg:hidden p-0.5">
+              <Button
+                onClick={() => setShow((prev) => !prev)}
+                variant="secondary"
+                size="icon"
+              >
+                <Menu className="text-white" />
+              </Button>
+            </div>
+          )}
 
           {show && (
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: show ? 0 : "100%" }}
               transition={{ type: "spring", stiffness: 100 }}
-              className="h-60 w-40 absolute  top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg border-white/30 shadow-lg"
+              className="h-64 w-40 absolute top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg border-white/30 shadow-lg"
             >
               <div className="w-full flex justify-end p-0">
                 <Button
@@ -118,9 +120,9 @@ const Navbar = () => {
               <div className=" flex flex-col space-y-4 h-full">
                 {links.map((item, i) => (
                   <Link
-                    className={`text-[10px] uppercase  font-semibold ${
+                    className={`text-[11px] uppercase  font-semibold ${
                       path == item.link ? "text-primary-links" : "text-black"
-                    }`}
+                    } z-50`}
                     key={i}
                     href={item.link}
                   >
