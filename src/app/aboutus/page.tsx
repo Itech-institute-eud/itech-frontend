@@ -7,8 +7,12 @@ import Image from "next/image";
 const page = () => {
   return (
     <Container>
-      <div className=" flex flex-col gap-5">
-        <img src="/images/aboutus.png" alt="aboutus" className="lg:h-[600px]" />
+      <div className="flex flex-col gap-5 object-fill">
+        <img
+          src="/images/aboutus.png"
+          alt="aboutus"
+          className="h-[250px] lg:h-[600px]"
+        />
         <p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
           Established in 1997, I-Tech Institute of Computers is a premier IT
           training organization with over 25 years of excellence in providing
@@ -28,7 +32,7 @@ const page = () => {
           rapidly evolving tech landscape.
         </p>
       </div>
-      <div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5 border-[1px] border-primary-links">
+      <div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5">
         <Heading title={"DIRECTOR’S DESK"} className="mb-2" />
         <div className="flex flex-col md:flex-row  justify-center md:gap-5 items-center">
           <div className="relative lg:w-[621px] w-[300px] lg:h-[504px] h-[300px]">
@@ -44,7 +48,7 @@ const page = () => {
             <h1 className="text-white text-lg lg:text-3xl font-bold text-center">
               MUSHTAQ AHMED – Director
             </h1>
-            <p className="text-white text-center text-sm lg:text-lg">
+            <p className="text-white text-sm">
               As the founder and Director of I-Tech Institute of Computers,
               MUSHTAQ AHMED has been the driving force behind the institute's
               success since its inception. With over two decades of experience

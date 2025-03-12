@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import MainLogo from "../../../public/icons/mainLogo";
 import Container from "./container";
 import { Button } from "../ui/button";
-import { div } from "framer-motion/client";
 
 const links = [
   {
@@ -105,7 +104,7 @@ const Navbar = () => {
               initial={{ x: "100%" }}
               animate={{ x: show ? 0 : "100%" }}
               transition={{ type: "spring", stiffness: 100 }}
-              className="h-64 w-40 absolute top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg border-white/30 shadow-lg"
+              className="h-64 w-40 absolute top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg shadow-lg"
             >
               <div className="w-full flex justify-end p-0">
                 <Button
