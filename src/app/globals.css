@@ -4,6 +4,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  font-family: 'Poppins', sans-serif;
+}
 
 
 

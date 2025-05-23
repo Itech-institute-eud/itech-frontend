@@ -9,11 +9,9 @@ interface VideoComponentProps {
 const VideoComponent = ({path}:VideoComponentProps)=>{
 
   return (
-    <Container>
     <div className="flex items-center justify-center ">
-    <video src={path} muted autoPlay loop />
+    <video src={path} muted autoPlay loop  className="opacity-80"/>
     </div>
-    </Container>
   )
 }
 

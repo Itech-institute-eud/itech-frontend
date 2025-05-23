@@ -104,7 +104,7 @@ const Navbar = () => {
               initial={{ x: "100%" }}
               animate={{ x: show ? 0 : "100%" }}
               transition={{ type: "spring", stiffness: 100 }}
-              className="h-64 w-40 absolute top-5 right-5 rounded-xl p-2 bg-white/20 backdrop-blur-lg shadow-lg"
+              className="h-64 w-40 absolute top-5 right-5 rounded-xl p-2 bg-white shadow-lg"
             >
               <div className="w-full flex justify-end p-0">
                 <Button

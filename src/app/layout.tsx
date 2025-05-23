@@ -1,25 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import "tailwindcss/index.css";
+import { Poppins } from 'next/font/google';
 
 //Custom import
 import Navbar from "@/components/custom/navbar";
 import Footer from "@/components/custom/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'], // Add weights as needed
+  display: 'swap',
+  preload: true, // Good for above-the-fold
 });
 
 export const metadata: Metadata = {
@@ -36,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-inter ${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased bg-primary-forground`}
+        className={`font-inter  ${poppins.className} antialiased bg-primary-forground`}
       >
         <Navbar />
         {children}
