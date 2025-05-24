@@ -1,7 +1,6 @@
-import Container from "@/components/custom/container";
 import Heading from "@/components/custom/heading";
+import Marquee from "@/components/custom/marquee";
 import ServiceCard from "@/components/custom/ServiceCard";
-import { img } from "framer-motion/m";
 import Image from "next/image";
 
 const services = [
@@ -33,7 +32,6 @@ const services = [
 
 const page = () => {
   return (
-    <Container>
       <div>
         <Heading
           title={"Transform Your Business with Cutting-Edge IT Solutions"}
@@ -47,7 +45,6 @@ const page = () => {
             layout="resposive"
           />
         </div>
-
         <div>
           <Heading title={"Our Services"} />
         </div>
@@ -62,10 +59,9 @@ const page = () => {
             />
           ))}
         </div>
-
         <div>
           <Heading title={"Trusted by Leading Companies"} />
-          <p>Comapny will go here.</p>
+				<Marquee />
         </div>
         <div>
           <Heading
@@ -89,7 +85,6 @@ const page = () => {
           </div>
         </div>
       </div>
-    </Container>
   );
 };
 

@@ -7,7 +7,7 @@ const ExploreBtn = () => {
       <Link href="/courses">
         <Button
           variant="outline"
-          className="md:w-[416px] h-[46px] rounded-xl bg-black text-white border-none"
+          className="md:w-[416px] h-[46px] rounded-xl bg-black text-white border-none transition-colors" 
         >
           Explore more courses
         </Button>

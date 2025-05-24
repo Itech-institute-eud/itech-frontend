@@ -31,7 +31,7 @@ const Marquee = () => {
               src={logo.path}
               alt={logo.title}
               layout="fill"
-              objectFit="contain"
+            className="object-contain"
             />
           </div>
         ))}
