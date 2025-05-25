@@ -31,7 +31,7 @@ const Gallery = () => {
 										alt={item.path}
 										src={`/images/gallery/${item.path}`}
 										fill
-										className="object-cover"
+										className="object-contain"
 									/>
 								</div>
 							</CarouselItem>
