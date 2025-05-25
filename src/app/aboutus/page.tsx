@@ -15,24 +15,27 @@ const page = () => {
 					className="h-[250px] lg:h-[600px] object-contain rounded-2xl opacity-90"
 				/>
 				<Heading title={'EMPOWERING FUTURES THROUGH TECHNOLOGY'} />
-				<p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
+				<p className="text-white text-lg  text-start text-wrap flex-1/2">
 					At I-Tech Institute of Computers, we believe that every individual has the potential to
 					build a successful career in the world of technology. Established in 1997, our journey
 					began with a simple mission: to provide quality, industry-relevant IT education that
 					transforms aspirations into achievements.
 				</p>
-				<p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
-					transforms aspirations into achievements. With over 25 years of training excellence, we
+				<p className="text-white text-lg  text-start text-wrap flex-1/2">
+					Transforms aspirations into achievements. With over 25 years of training excellence, we
 					have evolved into a leading ISO 9001:2015 certified and IAF-verified institution,
 					committed to delivering internationally benchmarked standards in technical education. Our
 					programs are designed to meet the ever-changing demands of the digital world, offering
 					hands-on experience and real-world application.
 				</p>
-				<p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
-					Whether it’s programming, data analytics, web development, or AI—our focus remains on
-					practical skills, career readiness, and personal growth. Backed by expert trainers,
-					corporate collaborations, and a vision to personalize learning journeys, I-Tech continues
-					to upskill the next generation of tech professionals with precision, purpose, and passion.
+				<p className="text-white text-lg  text-start text-wrap flex-1/2">
+					Whether it's <span className="font-semibold text-black">programming</span>,{' '}
+					<span className="font-semibold text-black">data analytics</span>,{' '}
+					<span className="font-semibold text-black"> web development</span>, or{' '}
+					<span className="font-semibold text-black">AI</span> our focus remains on practical
+					skills, career readiness, and personal growth. Backed by expert trainers, corporate
+					collaborations, and a vision to personalize learning journeys, I-Tech continues to upskill
+					the next generation of tech professionals with precision, purpose, and passion.
 				</p>
 			</div>
 			<div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5">
