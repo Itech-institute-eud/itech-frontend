@@ -9,7 +9,11 @@ const page = () => {
 		<Container>
 			<Heading title={'About ITech'} />
 			<div className="flex flex-col gap-5 object-fill">
-				<img src="/images/aboutus.png" alt="aboutus" className="h-[250px] lg:h-[600px]" />
+				<img
+					src="/images/aboutus.png"
+					alt="aboutus"
+					className="h-[250px] lg:h-[600px] object-contain rounded-2xl opacity-90"
+				/>
 				<Heading title={'EMPOWERING FUTURES THROUGH TECHNOLOGY'} />
 				<p className="text-white lg:text-lg text-sm text-start text-wrap flex-1/2">
 					At I-Tech Institute of Computers, we believe that every individual has the potential to
@@ -71,13 +75,15 @@ const page = () => {
 				</div>
 			</div>
 
-			<div className=" flex flex-col md:flex-row justify-between items-center my-4">
+			<div className=" flex flex-col md:flex-row  items-center justify-center my-4">
 				<OtherBranch
+					imagePath="other_branch1.jpeg"
 					title="I-Tech RT Nagar Branch (Main Branch)"
 					address="2, JC Nagar Main Rd, Ganganagar, RT nagar Bengaluru, Karnataka 560032"
 					phone={['+91 9845193425', '+91 7892537944']}
 				/>
 				<OtherBranch
+					imagePath="other_branch2.jpeg"
 					title="I-Tech CHIKKABANAVARA Branch"
 					address="1st floor, opp to sri chamundeshwari petrol bunk, chikkabanavara, hesaraghatta main road, Bangalore - 560090 "
 					phone={['+91 9845751732', '+91 7019166910']}

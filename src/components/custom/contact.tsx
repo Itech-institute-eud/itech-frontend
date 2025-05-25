@@ -23,7 +23,7 @@ const Contact = () => {
 				<div className="flex gap-5">
 					<div className="flex flex-col text-sm">
 						<h2 className="text-xl font-bold my-2">Visit us</h2>
-						<p>JC Nagar Main Rd, Ganganagar, Bengaluru, Karnataka 560032</p>
+						<p>2, JC Nagar Main Rd, Ganganagar, Bengaluru, Karnataka 560032</p>
 					</div>
 					<div>
 						<h2 className="text-xl font-bold my-2">Contact Info</h2>
@@ -52,7 +52,7 @@ const Contact = () => {
 
 				<div className="flex w-full mg:w-[80%] gap-2 my-3">
 					<Input name="email" />
-					<Button text='Subscribe'/>
+					<Button text="Subscribe" />
 				</div>
 			</div>
 		</Container>
