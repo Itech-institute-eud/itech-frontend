@@ -14,8 +14,8 @@ import { galleryImages } from '@/data'
 
 const Gallery = () => {
 	return (
-		<div className="w-full my-4">
-			<div className="max-w-[800px] mx-auto">
+		<div className="w-full my-4 overflow-x-auto">
+			<div className="md:max-w-[500px] mx-auto ">
 				<Carousel
 					plugins={[
 						Autoplay({
@@ -31,14 +31,13 @@ const Gallery = () => {
 										alt={item.path}
 										src={`/images/gallery/${item.path}`}
 										fill
-										className="object-contain"
+										className="object-cover"
 									/>
 								</div>
 							</CarouselItem>
 						))}
 					</CarouselContent>
 					<CarouselPrevious />
-					<CarouselNext />
 				</Carousel>
 			</div>
 		</div>
