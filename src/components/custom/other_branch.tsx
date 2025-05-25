@@ -12,7 +12,7 @@ const OtherBranch = ({ title, address, phone, imagePath }: Other_BranchsProps) =
 	return (
 		<div className="border m-2 p-3 w-full  bg-white/20 backdrop-blur-lg border-white/30 shadow-lg rounded-lg flex flex-col gap-3">
 			<h1 className="text-2xl text-center font-semibold text-black my-2">{title}</h1>
-			<div className="relative object-contain  w-[400px] h-[400px] ">
+			<div className="relative object-contain  max-w-[300px] h-[400px] ">
 				<Image
 					src={`/images/${imagePath}`}
 					alt="other_branchs"
