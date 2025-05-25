@@ -92,6 +92,9 @@ const page = () => {
 					phone={['+91 9845751732', '+91 7019166910']}
 				/>
 			</div>
+			<Heading title={'Join Us Today'} />
+			<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
+			<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
 		</Container>
 	)
 }
