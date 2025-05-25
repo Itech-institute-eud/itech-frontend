@@ -46,7 +46,7 @@ const Contact = () => {
 									+91-7892537944
 								</a>
 							</div>
-						</div>
+					</div>
 					</div>
 				</div>
 

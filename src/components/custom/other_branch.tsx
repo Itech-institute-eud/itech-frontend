@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { MapPin, Phone } from 'lucide-react'
 import Image from 'next/image'
 
@@ -10,7 +13,13 @@ interface Other_BranchsProps {
 
 const OtherBranch = ({ title, address, phone, imagePath }: Other_BranchsProps) => {
 	return (
-		<div className="border m-2 p-3 w-full  bg-white/20 backdrop-blur-lg border-white/30 shadow-lg rounded-lg flex flex-col gap-3">
+		<motion.div
+			initial={{ scale: 0.7, opacity: 0 }}
+			whileInView={{ scale: 1, opacity: 1 }}
+			transition={{ duration: 0.5, ease: 'easeOut' }}
+			viewport={{ once: true, amount: 0.2 }}
+			className="border m-2 p-3 w-full  bg-white/20 backdrop-blur-lg border-white/30 shadow-lg rounded-lg flex flex-col gap-3"
+		>
 			<h1 className="text-2xl text-center font-semibold text-black my-2">{title}</h1>
 			<div className="relative object-contain  max-w-[300px] h-[400px] ">
 				<Image
@@ -44,7 +53,7 @@ const OtherBranch = ({ title, address, phone, imagePath }: Other_BranchsProps) =
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
