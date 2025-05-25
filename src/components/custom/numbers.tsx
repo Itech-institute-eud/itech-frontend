@@ -6,18 +6,18 @@ import Container from './container'
 
 const data: any = [
 	{
-		title: 'No. of Students Enrolled',
+		title: 'Students Enrolled',
 		start: 9990,
 		end: 10000,
 		hasCountUp: true,
 	},
 	{
-		title: 'Successfully Placed Students',
+		title: 'Placed Students',
 		num: '70%',
 		hasCountUp: false,
 	},
 	{
-		title: 'Certified Retired Military Officers',
+		title: 'Certificates issued',
 		start: 4950,
 		end: 5000,
 		hasCountUp: true,

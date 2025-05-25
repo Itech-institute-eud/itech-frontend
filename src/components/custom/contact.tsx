@@ -29,7 +29,7 @@ const Contact = () => {
 						<h2 className="text-xl font-bold my-2">Contact Info</h2>
 						<div className=" flex flex-col text-sm gap-1 text-start">
 							<div className="flex items-center gap-2.5">
-								<span className="font-extrabold">Email Us:</span>
+								<span className="font-extrabold">Email:</span>
 								<a href="mailto:info@itechinstitute.com" className="text-black">
 									info@itechinstitute.com
 								</a>
@@ -46,7 +46,7 @@ const Contact = () => {
 									+91-7892537944
 								</a>
 							</div>
-					</div>
+						</div>
 					</div>
 				</div>
 
