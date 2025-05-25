@@ -52,7 +52,7 @@ const Contact = () => {
 
 				<div className="flex w-full mg:w-[80%] gap-2 my-3">
 					<Input name="email" />
-					<Button text="Subscribe" />
+					<Button type="button" text="Subscribe" />
 				</div>
 			</div>
 		</Container>

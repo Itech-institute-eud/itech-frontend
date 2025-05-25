@@ -85,3 +85,24 @@ export const faqs = [
 			'Fees vary depending on the course. We offer competitive pricing, easy installment options, and special discounts during promotional periods.',
 	},
 ]
+
+export const galleryImages = [
+	{ path: '2.JPG' },
+	{ path: '4.JPG' },
+	{ path: '8.JPG' },
+	{ path: '10.jpg' },
+	{ path: '11.jpg' },
+	{ path: '13.jpg' },
+	{ path: '14.jpg' },
+	{ path: '15.jpg' },
+	{ path: '16.jpeg' },
+	{ path: '17.jpeg' },
+	{ path: '18.jpeg' },
+	{ path: '19.jpeg' },
+	{ path: '20.jpeg' },
+	{ path: '21.jpeg' },
+	{ path: '22.jpeg' },
+	{ path: '23.jpeg' },
+	{ path: '24.jpeg' },
+	{ path: '25.jpeg' },
+]

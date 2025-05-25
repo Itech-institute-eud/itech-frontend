@@ -1,5 +1,6 @@
 import Container from '@/components/custom/container'
 import Description from '@/components/custom/description'
+import Gallery from '@/components/custom/gallery'
 import Heading from '@/components/custom/heading'
 import OtherBranch from '@/components/custom/other_branch'
 import Image from 'next/image'
@@ -95,6 +96,7 @@ const page = () => {
 			<Heading title={'Join Us Today'} />
 			<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
 			<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
+			<Gallery />
 		</Container>
 	)
 }
