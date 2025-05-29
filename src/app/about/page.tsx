@@ -87,10 +87,10 @@ const page = () => {
 				<Heading title={'Why Choose Us'} />
 				<Description text="At I-Tech Institute of Computers, we take pride in being ISO 9001:2015 certified and IAF (International Accreditation Forum) verified, ensuring that we meet the highest global standards in education and training services." />
 				<div className="flex flex-col md:flex-row items-center justify-evenly gap-5 p-4 ">
-					<Image src={'/images/IAS.png'} alt="IAS" width={150} height={150} objectFit="cover" />
-					<Image src={'/images/ISO.png'} alt="ISO" width={150} height={150} objectFit="cover" />
-					<Image src={'/images/25years.png'} alt="IAS" width={100} height={100} objectFit="cover" />
-					<Image src={'/images/IAF.png'} alt="IAF" width={150} height={150} objectFit="cover" />
+					<Image src={'/images/IAS.png'} alt="IAS" width={150} height={150} className='object-contain' />
+					<Image src={'/images/ISO.png'} alt="ISO" width={150} height={150}  className='object-contain'/>
+					<Image src={'/images/25years.png'} alt="IAS" width={100} height={100} className='object-contain'/>
+					<Image src={'/images/IAF.png'} alt="IAF" width={150} height={150}  className='object-contain'/>
 				</div>
 			</div>
 
