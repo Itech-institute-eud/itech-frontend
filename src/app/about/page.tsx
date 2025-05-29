@@ -6,6 +6,7 @@ import OtherBranch from '@/components/custom/other_branch'
 import Image from 'next/image'
 
 const page = () => {
+
 	const branches = [
 		{
 			imagePath: 'other_branch1.jpeg',
@@ -120,6 +121,7 @@ const page = () => {
 				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
 			</div>
 			<Gallery />
+			<p className=' text-center text-white'>{"<"} swipe {">"}</p>
 		</Container>
 	)
 }
