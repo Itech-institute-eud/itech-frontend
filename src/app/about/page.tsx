@@ -114,8 +114,8 @@ const page = () => {
 				<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
 				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
 				<Gallery />
-				<p className=" text-center text-white/50">
-					{'<'} swipe {'>'}
+				<p className=" text-center text-black text-lg font-extrabold">
+					. . .
 				</p>
 			</div>
 		</Container>
