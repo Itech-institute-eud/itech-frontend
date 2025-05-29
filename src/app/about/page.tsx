@@ -6,6 +6,22 @@ import OtherBranch from '@/components/custom/other_branch'
 import Image from 'next/image'
 
 const page = () => {
+	const branches = [
+		{
+			imagePath: 'other_branch1.jpeg',
+			title: 'I-Tech RT Nagar Branch (Main Branch)',
+			address: '2, JC Nagar Main Rd, Ganganagar, RT nagar Bengaluru, Karnataka 560032',
+			phone: ['+91 9845193425', '+91 7892537944'],
+		},
+		{
+			imagePath: 'other_branch2.jpeg',
+			title: 'I-Tech CHIKKABANAVARA Branch',
+			address:
+				'1st floor, opp to sri chamundeshwari petrol bunk, chikkabanavara, hesaraghatta main road, Bangalore - 560090',
+			phone: ['+91 9845751732', '+91 7019166910'],
+		},
+	]
+
 	return (
 		<Container>
 			<Heading title={'About ITech'} />
@@ -78,8 +94,7 @@ const page = () => {
 					<Image src={'/images/IAF.png'} alt="IAF" width={150} height={150} objectFit="cover" />
 				</div>
 			</div>
-
-			<div className=" flex flex-col md:flex-row  items-center justify-center my-4">
+			<div className=" flex flex-col md:flex-row  items-center justify-evenly">
 				<OtherBranch
 					imagePath="other_branch1.jpeg"
 					title="I-Tech RT Nagar Branch (Main Branch)"
@@ -93,9 +108,12 @@ const page = () => {
 					phone={['+91 9845751732', '+91 7019166910']}
 				/>
 			</div>
-			<Heading title={'Join Us Today'} />
-			<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
-			<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
+
+			<div className="mt-36">
+				<Heading title={'Join Us Today'} />
+				<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
+				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
+			</div>
 			<Gallery />
 		</Container>
 	)
