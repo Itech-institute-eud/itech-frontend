@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import { useState, } from 'react'
 import { motion } from 'framer-motion'
 
 import { links } from '@/data'
@@ -12,29 +12,12 @@ import Container from './container'
 const Navbar = () => {
 	const path = usePathname()
 	const [show, setShow] = useState(false)
-	const [isScrolled, setIsScrolled] = useState(false)
-
-	useEffect(() => {
-		const handleScroll = () => {
-			if (window.scrollY > 100) {
-				setIsScrolled(true)
-			} else {
-				setIsScrolled(false)
-			}
-		}
-		window.addEventListener('scroll', handleScroll)
-		return () => window.removeEventListener('scroll', handleScroll)
-	}, [])
 
 	const handleOnClick = () => {
 		setShow((prev) => !prev)
 	}
 	return (
-		<Container
-			className={`${
-				isScrolled ? 'bg-white/20 backdrop-blur-lg border-white/30 shadow-lg' : 'bg-black'
-			} transition-colors  sticky top-0 z-40`}
-		>
+		<Container className={`${'bg-black'} transition-colors  sticky top-0 z-40`}>
 			{/* NAVBAR START */}
 			<nav className=" w-full h-[70px] flex  lg:justify-center lg:items-center ">
 				<div className="w-full flex justify-between lg:justify-center  items-center">

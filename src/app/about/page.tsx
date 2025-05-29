@@ -32,28 +32,33 @@ const page = () => {
 					className="h-[250px] lg:h-[600px] object-contain rounded-2xl opacity-90"
 				/>
 				<Heading title={'EMPOWERING FUTURES THROUGH TECHNOLOGY'} />
-				<p className="text-white text-lg  text-start text-wrap flex-1/2">
-					At I-Tech Institute of Computers, we believe that every individual has the potential to
+				<Description
+					text="At I-Tech Institute of Computers, we believe that every individual has the potential to
 					build a successful career in the world of technology. Established in 1997, our journey
 					began with a simple mission: to provide quality, industry-relevant IT education that
-					transforms aspirations into achievements.
-				</p>
-				<p className="text-white text-lg  text-start text-wrap flex-1/2">
-					Transforms aspirations into achievements. With over 25 years of training excellence, we
+					transforms aspirations into achievements."
+				/>
+				<Description
+					text="Transforms aspirations into achievements. With over 25 years of training excellence, we
 					have evolved into a leading ISO 9001:2015 certified and IAF-verified institution,
 					committed to delivering internationally benchmarked standards in technical education. Our
 					programs are designed to meet the ever-changing demands of the digital world, offering
-					hands-on experience and real-world application.
-				</p>
-				<p className="text-white text-lg  text-start text-wrap flex-1/2">
-					Whether it's <span className="font-semibold text-black">programming</span>,{' '}
-					<span className="font-semibold text-black">data analytics</span>,{' '}
-					<span className="font-semibold text-black"> web development</span>, or{' '}
-					<span className="font-semibold text-black">AI</span> our focus remains on practical
+					hands-on experience and real-world application."
+				/>
+
+				<Description
+					text="Transforms aspirations into achievements. With over 25 years of training excellence, we
+					have evolved into a leading ISO 9001:2015 certified and IAF-verified institution,
+					committed to delivering internationally benchmarked standards in technical education. Our
+					programs are designed to meet the ever-changing demands of the digital world, offering
+					hands-on experience and real-world application."
+				/>
+				<Description
+					text="Whether it's programming data analytics web development AI our focus remains on practical
 					skills, career readiness, and personal growth. Backed by expert trainers, corporate
 					collaborations, and a vision to personalize learning journeys, I-Tech continues to upskill
-					the next generation of tech professionals with precision, purpose, and passion.
-				</p>
+					the next generation of tech professionals with precision, purpose, and passion."
+				/>
 			</div>
 			<div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5">
 				<Heading title={'DIRECTOR’S DESK'} className="mb-2" />
@@ -109,7 +114,7 @@ const page = () => {
 				/>
 			</div>
 
-			<div className="mt-36">
+			<div className="mt-36 w-full">
 				<Heading title={'Join Us Today'} />
 				<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
 				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
