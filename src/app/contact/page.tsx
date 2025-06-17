@@ -63,9 +63,6 @@ const page = () => {
 						<div className="mt-5">
 							<h1 className="text-primary-links">Select Subject?</h1>
 							<div className="flex gap-3 items-center">
-								<CustomRadio />
-								<CustomRadio />
-								<CustomRadio />
 							</div>
 						</div>
 

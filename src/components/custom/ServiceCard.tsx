@@ -29,9 +29,8 @@ const ServiceCard = ({ title, subTitle, description, imagePath }: ServiceCardPro
 					<div className="object-cover p-2 md:p-4">
 						<Image src={imagePath} alt="solutions" height={100} width={100} />
 					</div>
-					<div className="p-2 md:p-4 flex flex-col space-y-4 w-full">
+					<div className="p-2 md:p-4 flex flex-col space-y-4 w-full justify-centerk">
 						<h1 className="font-semibold md:font-bold text-sm md:text-xl">{subTitle}</h1>
-						<span className="inline-block bg-gray-200 text-gray-600 min-w-full min-h-[20px] text-center rounded-lg"></span>
 					</div>
 				</div>
 			</div>

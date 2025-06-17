@@ -1,98 +1,101 @@
-"use client";
+'use client'
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
-import FacebookLogo from "../../../public/icons/fackbookLogo";
-import GithubLogo from "../../../public/icons/githubLogo";
-import GlobeLogo from "../../../public/icons/globeLogo";
-import MainLogo from "../../../public/icons/mainLogo";
-import TwitterLogo from "../../../public/icons/twitterLogo";
-import Container from "./container";
-import Title from "./title";
+import FacebookLogo from '../../../public/icons/fackbookLogo'
+import MainLogo from '../../../public/icons/mainLogo'
+import Container from './container'
+import Title from './title'
+import LinkedInLogo from '../../../public/icons/linkedin'
+import InstagramLogo from '../../../public/icons/instagram'
+import GithubLogo from '../../../public/icons/github-logo'
 
 const Footer = () => {
-  const [currentYear, setCurrentYear] = useState(0);
+	const [currentYear, setCurrentYear] = useState(0)
 
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+	useEffect(() => {
+		setCurrentYear(new Date().getFullYear())
+	}, [])
 
-  const links: any = {
-    Community: {
-      links: [
-        "About Us",
-        "Guidelines and how to",
-        "Quote from the best",
-        "How to start a blog",
-      ],
-      title: "Community",
-    },
-    "Getting Started": {
-      title: "Getting Started",
-      links: [
-        "About Us",
-        "Guidelines and how to",
-        "Quote from the best",
-        "How to start a blog",
-        "Quote from the best",
-        "Guidelines and how to",
-      ],
-    },
-    "lower-footer": [
-      `${currentYear} The Good Company. All Rights Reserved`,
-      ["Terms of service", "Privacy Policy", "Security", "Sitemap"],
-      [<TwitterLogo />, <FacebookLogo />, <GlobeLogo />, <GithubLogo />],
-    ],
-  };
+	const links: any = {
+		Resources: {
+			links: [
+				'Home',
+				'About Us',
+				'Courses',
+				'I-Tech Certified List',
+				'Events',
+				'I-Tech Solutions',
+				'Contact Us',
+			],
+			title: 'Resources',
+		},
+		Social: {
+			links: [
+				{
+					text: 'Follw us on Facebook',
+					link: 'https://www.facebook.com/share/1GBUwLpfpM/?mibextid=wwXIfr',
+					icon: <FacebookLogo />,
+				},
+				{
+					text: 'Follw us on Instagram',
+					link: 'https://www.instagram.com/itech_bangalore/profilecard/?igsh=MWc1dWZlaHhjZHNnbg==',
+					icon: <InstagramLogo />,
+				},
+				{
+					text: 'Follw us on Github',
+					link: 'https://github.com/itech-institute',
+					icon: <GithubLogo className="text-3xl" />,
+				},
+				{
+					text: 'Follw us on Linkedin',
+					link: 'https://www.linkedin.com/company/i-tech-institute-of-computer-s/',
+					icon: <LinkedInLogo />,
+				},
+			],
+			title: 'Social Media',
+		},
+		'lower-footer': [
+			`@${currentYear} All Rights Reserved. Designed and Developed by I-Tech Institute Of Computers`,
+			['Terms of service', 'Privacy Policy', 'Security', 'Sitemap'],
+		],
+	}
 
-  return (
-    <Container className="bg-black">
-      <footer className=" bg-black  text-primary-links flex flex-col justify-center lg:py-10">
-        <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">
-          <div className="flex-1/2">
-            <MainLogo />
-          </div>
-          <div className="flex-1/2">
-            <Title text={links.Community.title} />
-            <div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
-              {links["Community"].links.map((item: string, i: number) => (
-                <li key={i}>{item}</li>
-              ))}
-            </div>
-          </div>
-          <div className="flex-1/2">
-            <Title text={links["Getting Started"].title} />
-            <div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
-              {links["Getting Started"].links.map((item: string, i: number) => (
-                <li key={i}>{item}</li>
-              ))}
-            </div>
-          </div>
-        </div>
+	return (
+		<Container className="bg-black">
+			<footer className=" bg-black  text-primary-links flex flex-col  lg:py-10">
+				<div className="flex justify-between flex-col gap-5 lg:flex-row">
+					<div className="flex-1/2 flex items-start">
+						<MainLogo />
+					</div>
+					<div className="flex-1/2">
+						<Title text={links.Resources.title} />
+						<div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
+							{links['Resources'].links.map((item: string, i: number) => (
+								<li key={i}>{item}</li>
+							))}
+						</div>
+					</div>
+					<div className="flex-1/2">
+						<Title text={links.Social.title} />
+						<div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
+							{links['Social'].links.map((item: any, i: number) => (
+								<a target="_blank" href={item.link} key={i}>
+									{item.icon}
+								</a>
+							))}
+						</div>
+					</div>
+				</div>
+				<div className="flex flex-col my-5 gap-5 items-center lg:flex-row">
+					<div className="flex-1/2 text-center">{links['lower-footer'][0]}</div>
+				</div>
+			</footer>
+		</Container>
+	)
+}
 
-        <div className="flex flex-col my-5 gap-5 items-center lg:flex-row">
-          <div className="flex-1/2">{links["lower-footer"][0]}</div>
-          <div className="flex-1/2 flex flex-col items-center gap-6 sm:flex-row ">
-            {links["lower-footer"][1].map((item: string, i: number) => (
-              <span className="block cursor-pointer" key={i}>
-                {item}
-              </span>
-            ))}
-          </div>
-          <div className="flex-1/2  flex items-center justify-center gap-6 ">
-            {links["lower-footer"][2].map((item: any, i: any) => (
-              <span className="cursor-pointer " key={i}>
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </footer>
-    </Container>
-  );
-};
-
-export default Footer;
+export default Footer
 
 // width: 1441;
 // height: 446;

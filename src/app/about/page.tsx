@@ -60,6 +60,7 @@ const page = () => {
 					the next generation of tech professionals with precision, purpose, and passion."
 				/>
 			</div>
+
 			<div className="bg-black/30 p-4 rounded-2xl shadow-lg my-5">
 				<Heading title={'DIRECTOR’S DESK'} className="mb-2" />
 				<div className="flex flex-col md:flex-row  justify-center md:gap-5 items-center">
@@ -85,28 +86,50 @@ const page = () => {
 
 			<div>
 				<Heading title={'Why Choose Us'} />
+
 				<Description text="At I-Tech Institute of Computers, we take pride in being ISO 9001:2015 certified and IAF (International Accreditation Forum) verified, ensuring that we meet the highest global standards in education and training services." />
+
 				<div className="flex flex-col md:flex-row items-center justify-evenly gap-5 p-4 ">
-					<Image src={'/images/IAS.png'} alt="IAS" width={150} height={150} className='object-contain' />
-					<Image src={'/images/ISO.png'} alt="ISO" width={150} height={150}  className='object-contain'/>
-					<Image src={'/images/25years.png'} alt="IAS" width={100} height={100} className='object-contain'/>
-					<Image src={'/images/IAF.png'} alt="IAF" width={150} height={150}  className='object-contain'/>
+					<Image
+						src={'/images/IAS.png'}
+						alt="IAS"
+						width={150}
+						height={150}
+						className="object-contain"
+					/>
+					<Image
+						src={'/images/ISO.png'}
+						alt="ISO"
+						width={150}
+						height={150}
+						className="object-contain"
+					/>
+					<Image
+						src={'/images/25years.png'}
+						alt="IAS"
+						width={100}
+						height={100}
+						className="object-contain"
+					/>
+					<Image
+						src={'/images/IAF.png'}
+						alt="IAF"
+						width={150}
+						height={150}
+						className="object-contain"
+					/>
 				</div>
 			</div>
 
 			<div className=" flex flex-col md:flex-row  items-center justify-evenly gap-36 mb-40 md:mt-10">
-				<OtherBranch
-					imagePath="other_branch1.jpeg"
-					title="I-Tech RT Nagar Branch (Main Branch)"
-					address="2, JC Nagar Main Rd, Ganganagar, RT nagar Bengaluru, Karnataka 560032"
-					phone={['+91 9845193425', '+91 7892537944']}
-				/>
-				<OtherBranch
-					imagePath="other_branch2.jpeg"
-					title="I-Tech CHIKKABANAVARA Branch"
-					address="1st floor, opp to sri chamundeshwari petrol bunk, chikkabanavara, hesaraghatta main road, Bangalore - 560090 "
-					phone={['+91 9845751732', '+91 7019166910']}
-				/>
+				{branches.map((item, i) => (
+					<OtherBranch
+						imagePath={item.imagePath}
+						title={item.title}
+						address={item.address}
+						phone={item.phone}
+					/>
+				))}
 			</div>
 
 			<div className="w-full mt-52">
@@ -114,9 +137,7 @@ const page = () => {
 				<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
 				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />
 				<Gallery />
-				<p className=" text-center text-black text-lg font-extrabold">
-					. . .
-				</p>
+				<p className=" text-center text-black text-lg font-extrabold">. . .</p>
 			</div>
 		</Container>
 	)

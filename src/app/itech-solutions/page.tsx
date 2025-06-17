@@ -1,4 +1,6 @@
 import Button from '@/components/custom/button'
+import Container from '@/components/custom/container'
+import Description from '@/components/custom/description'
 import Heading from '@/components/custom/heading'
 import Marquee from '@/components/custom/marquee'
 import ServiceCard from '@/components/custom/ServiceCard'
@@ -61,34 +63,28 @@ const page = () => {
 			</div>
 			<div>
 				<Heading title={'Trusted by Leading Companies'} />
-				<Marquee />
 			</div>
 			<div className="my-4 flex items-center justify-center">
 				<Link href={'/contact'}>
-					<Button type='link' text="Contact Us" />
+					<Button type="link" text="Contact Us" />
 				</Link>
 			</div>
-			{/* <div>
-          <Heading
-            title={
-              "TechSolutions transformed our business with their innovative solutions."
-            }
-          />
-          <div className="flex items-center justify-center space-x-3 my-10">
-            <div className="object-cover w-[50px]">
-              <Image
-                src={"/images/Solutions-Profile.png"}
-                alt="profile"
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className="text-white">
-              <h1>Maximilian Stone</h1>
-              <p>CEO, Innovative Corp</p>
-            </div>
-          </div> 
-        </div>*/}
+			<Heading title={'OUR TECH STACK'} />
+			<Description text="we focus on emerging technologies for building high performing web and mobile products that can be securely deployed in the cloud" />
+			<Marquee />
+			<Container>
+				<div className="flex flex-col md:flex-row items-center justify-center bg-black/50 p-10 rounded-xl gap-2.5">
+					<div className="">
+						<Image height={300} width={500} src={'/images/solutions.jpg'} alt="solutions" />
+					</div>
+					<div className=" flex flex-col items-center justify-center">
+						<Heading title={'Lets bring your technical imagination to reality'} />
+						<a href="tel:+91-7892537944" className="text-black">
+							<Button text="Book a call" type="link" />
+						</a>
+					</div>
+				</div>
+			</Container>
 		</div>
 	)
 }
