@@ -15,11 +15,13 @@ const page = () => {
 	return (
 		<Container>
 			<Heading title={'I-TECH CERTIFIED LIST'} />
-			<Heading title={'BRANCH CERTIFIED & Military BATCH (PARA/MEG CENTER/ASC) '} />
+			<Heading title={'BRANCH CERTIFIED & Military BATCH (PARA/MEG CENTER/ASC)'} />
 			<div className="hidden  w-full md:flex items-center justify-center my-5">
 				<YearFilter setYear={setYear} year={year} />
 			</div>
-			<SearchBar search={search} setSearch={setSearch} />
+			<div>
+				<SearchBar search={search} setSearch={setSearch} />
+			</div>
 			<div className="w-full">
 				<StudentList year={year} page={page} onPageChange={setPage} />
 			</div>

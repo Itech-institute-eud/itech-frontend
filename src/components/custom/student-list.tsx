@@ -74,7 +74,7 @@ const StudentList = ({ year, page, onPageChange }: any) => {
 				</TableHeader>
 				<TableBody>
 					{Array.isArray(data?.data) &&
-						data.data?.map((student: IStudent) => (
+						data?.data?.map((student: IStudent) => (
 							<TableRow key={student._id}>
 								<TableCell className="font-medium">{student._id}</TableCell>
 								<TableCell>{student.name}</TableCell>
