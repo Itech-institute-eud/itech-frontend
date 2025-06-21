@@ -13,7 +13,7 @@ export const links = [
 	},
 	{
 		title: 'Itech soulutions',
-		link: '/itech-solutions',
+		link: '/solutions',
 	},
 	{
 		title: 'IT CERTIFIED MILITARY LIST',
@@ -22,6 +22,33 @@ export const links = [
 	{
 		title: 'CONTACT',
 		link: '/contact',
+	},
+]
+
+export const services = [
+	{
+		title: 'Web Development',
+		description: 'Custom web development solutions.',
+		subTitle: 'Responsive Design',
+		imagePath: '/images/Solution1.png',
+	},
+	{
+		title: 'UI/UX Design',
+		description: 'Creating intuitive and engaging interfaces.',
+		subTitle: 'User Research',
+		imagePath: '/images/Solution2.png',
+	},
+	{
+		title: 'Cloud Solutions',
+		description: 'Scalable and secure cloud services.',
+		subTitle: 'Cloud Hosting',
+		imagePath: '/images/Solution3.png',
+	},
+	{
+		title: 'Mobile Development',
+		description: 'Creating seamless mobile experiences.',
+		subTitle: 'iOS & Android',
+		imagePath: '/images/Solution4.png',
 	},
 ]
 
@@ -106,4 +133,163 @@ export const galleryImages = [
 	{ path: '17.jpeg' },
 	{ path: '18.jpeg' },
 	{ path: '19.jpeg' },
+]
+export const ProgrammingCourses = [
+	{
+		title: 'C Programming',
+		imagePath: '/images/courses/c_fundamentals.png',
+		description:
+			'A detailed overview of the C Programming Language, emphasizing its syntax, memory managment, and system-level caapabilites essential for structured application development.',
+	},
+	{
+		title: 'C Programming with Data Structures',
+		imagePath: '/images/courses/c_dsa.png',
+		description:
+			'A comprehensive focus on C programming combined with key data structures such as arrays, stacks, and queues, aimed at efficient data handling and problem-solving',
+	},
+	{
+		title: 'C++ Programming with OOPS Concepts',
+		imagePath: '/images/courses/cpp_oops.png',
+		description:
+			'An in-depth study of C++ programming with a focus on Object-Oriented Programming principles like encapsulation, inheritance, and polymorphism for modular system design.',
+	},
+	{
+		title: 'Java Programming with OOPS Concepts',
+		imagePath: '/images/courses/java_fundamentals.png',
+		description:
+			'An extensive analysis of Java programming fundamentals with a focus on Object-Oriented methodologies for structured, scalable, and platform-independent applications.',
+	},
+	{
+		title: 'Java Programming with OOPS and Data Structures',
+		imagePath: '/images/courses/java_dsa.png',
+		description:
+			'An integration of Java programming principles with advanced data structures such as trees and graphs, emphasizing optimized algorithms and scalable solutions.',
+	},
+	{
+		title: 'Python Programming with Data Visualization and OOPS Concepts',
+		imagePath: '/images/courses/python_fundamentals.png',
+		description:
+			'A comprehensive approach to Python programming fundamentals, Object-Oriented techniques, and data visualization using industry-standard libraries like Matplotlib and Pandas.',
+	},
+]
+
+export const DataAnalytics = [
+	{
+		title: 'Python with Data Visualization',
+		imagePath: '/images/courses/python_visu.png',
+		description:
+			"A program focusing on Python's capabilities for analyzing and visualizing complex datasets, essential for driving data-informed decision-making in modern business environments.",
+	},
+	{
+		title: 'DBMS with SQL',
+		imagePath: '/images/courses/Dbms.png',
+		description:
+			'An in-depth course on database management and structured query language, providing the foundation for efficient data organization, retrieval, and manipulation in enterprise systems',
+	},
+	{
+		title: 'Advanced Excel',
+		imagePath: '/images/courses/advance_excel.jpg',
+		description:
+			'Comprehensive training on leveraging Excel’s advanced features, empowering professionals to perform high-level data analysis and streamline reporting processes.',
+	},
+	{
+		title: 'Power BI',
+		imagePath: '/images/courses/power_bi.png',
+		description:
+			'A detailed exploration of Power BI’s tools and functionalities, enabling the creation of dynamic dashboards and actionable insights for business intelligence strategies.',
+	},
+]
+
+export const DevelopmentCourses = [
+	{
+		title: ' Web Development (Frontend)',
+		imagePath: '/images/courses/webdev_frontend.png',
+		description:
+			'A program covering HTML5, CSS, JavaScript, and React, focused on building responsive user interfaces. It includes hosting solutions and domain management for effective web application deployment.',
+	},
+	{
+		title: 'Fullstack Web Development',
+		imagePath: '/images/courses/webdev_fullstack.png',
+		description:
+			'A program covering frontend and backend development with Node.js, Python, MongoDB, and SQLite. This course helps professionals build user interfaces, implement server-side logic, and manage data storage.',
+	},
+	{
+		title: 'Introduction to Cyber Security',
+		imagePath: '/images/courses/cyber_security.jpg',
+		description:
+			'Learn the basics of cyber threats, safe browsing, data protection, and online safety. This course introduces key security principles to help you stay secure in today’s digital world.',
+	},
+]
+
+export const UIUXCourses = [
+	{
+		title: 'UI/UX Designing',
+		imagePath: '/images/courses/uiux.png',
+		description:
+			'A professional program on Figma, focusing on creating intuitive user interfaces and collaborative design workflows for modern digital products',
+	},
+]
+
+export const AICourses = [
+	{
+		title: 'Foundation Of AI and Machine learning',
+		imagePath: '/images/courses/ai_foundation.png',
+		description:
+			'Start your journey into the world of Artificial Intelligence and Machine Learning. This beginner-friendly course covers the foundational concepts behind AI, machine learning models, and their real-world applications. Understand how machines can learn from data, recognize patterns, and make predictions.',
+	},
+	{
+		title: 'Core AI Concepts and Tools',
+		imagePath: '/images/courses/core_ai.png',
+		description:
+			'Dive deeper into the key concepts and tools that power modern AI systems. This course includes hands-on exposure to popular AI frameworks, algorithm design, neural networks, and model training techniques. Ideal for learners aiming to build practical AI skills.',
+	},
+]
+export const SoftwareCourses = [
+	{
+		title: 'Diploma in Computer Application',
+		imagePath: '/images/courses/dca.jpg',
+		description:
+			'Learn the fundamentals of computing with practical training in MS Office, database management using MS Access, Windows OS, and typing skills using Typing Master.',
+	},
+	{
+		title: 'Post Graduate Diploma in Computer Application',
+		imagePath: '/images/courses/pgdca.jpg',
+		description:
+			'An advanced program covering MS Office, DBMS, networking, web designing, internet browsing, and Windows operating system.',
+	},
+	{
+		title: 'Software Engineering',
+		imagePath: '/images/courses/software_engineering.jpg',
+		description:
+			'A comprehensive course that includes system software concepts, DBMS, accounting software, computer networking, and web designing.',
+	},
+	{
+		courseName: 'Diploma in Accounting Package',
+		imagePath: '/images/courses/dap.jpg',
+		title: '📊 Diploma in Accounting Package',
+		description:
+			'Master popular accounting software tools with hands-on practice in digital accounting, billing, invoicing, and GST-ready solutions.',
+	},
+]
+
+export const HomePageCards = [
+	{
+		courseName: 'Diploma in Accounting Package',
+		imagePath: '/images/courses/dap.jpg',
+		title: '📊 Diploma in Accounting Package',
+		description:
+			'Master popular accounting software tools with hands-on practice in digital accounting, billing, invoicing, and GST-ready solutions.',
+	},
+	{
+		title: 'Foundation Of AI and Machine learning',
+		imagePath: '/images/courses/ai_foundation.png',
+		description:
+			'Start your journey into the world of Artificial Intelligence and Machine Learning. This beginner-friendly course covers the foundational concepts behind AI, machine learning models, and their real-world applications. Understand how machines can learn from data, recognize patterns, and make predictions.',
+	},
+	{
+		title: 'Advanced Excel',
+		imagePath: '/images/courses/advance_excel.jpg',
+		description:
+			'Comprehensive training on leveraging Excel’s advanced features, empowering professionals to perform high-level data analysis and streamline reporting processes.',
+	},
 ]

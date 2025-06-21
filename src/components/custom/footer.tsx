@@ -9,6 +9,7 @@ import Title from './title'
 import LinkedInLogo from '../../../public/icons/linkedin'
 import InstagramLogo from '../../../public/icons/instagram'
 import GithubLogo from '../../../public/icons/github-logo'
+import Link from 'next/link'
 
 const Footer = () => {
 	const [currentYear, setCurrentYear] = useState(0)
@@ -20,35 +21,34 @@ const Footer = () => {
 	const links: any = {
 		Resources: {
 			links: [
-				'Home',
-				'About Us',
-				'Courses',
-				'I-Tech Certified List',
-				'Events',
-				'I-Tech Solutions',
-				'Contact Us',
+				{ label: 'Home', href: '/' },
+				{ label: 'About Us', href: '/about' },
+				{ label: 'Courses', href: '/courses' },
+				{ label: 'I-Tech Certified List', href: '/certificate' },
+				{ label: 'I-Tech Solutions', href: '/solutions' },
+				{ label: 'Contact Us', href: '/contact' },
 			],
 			title: 'Resources',
 		},
 		Social: {
 			links: [
 				{
-					text: 'Follw us on Facebook',
+					text: 'Follow us on Facebook',
 					link: 'https://www.facebook.com/share/1GBUwLpfpM/?mibextid=wwXIfr',
 					icon: <FacebookLogo />,
 				},
 				{
-					text: 'Follw us on Instagram',
+					text: 'Follow us on Instagram',
 					link: 'https://www.instagram.com/itech_bangalore/profilecard/?igsh=MWc1dWZlaHhjZHNnbg==',
 					icon: <InstagramLogo />,
 				},
 				{
-					text: 'Follw us on Github',
+					text: 'Follow us on Github',
 					link: 'https://github.com/itech-institute',
 					icon: <GithubLogo className="text-3xl" />,
 				},
 				{
-					text: 'Follw us on Linkedin',
+					text: 'Follow us on Linkedin',
 					link: 'https://www.linkedin.com/company/i-tech-institute-of-computer-s/',
 					icon: <LinkedInLogo />,
 				},
@@ -68,11 +68,14 @@ const Footer = () => {
 					<div className="flex-1/2 flex items-start">
 						<MainLogo />
 					</div>
+					{/* Resource starts here */}
 					<div className="flex-1/2">
 						<Title text={links.Resources.title} />
 						<div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
-							{links['Resources'].links.map((item: string, i: number) => (
-								<li key={i}>{item}</li>
+							{links['Resources'].links.map((item: any, i: number) => (
+								<Link href={item.href} key={i}>
+									{item.label}
+								</Link>
 							))}
 						</div>
 					</div>
@@ -80,8 +83,8 @@ const Footer = () => {
 						<Title text={links.Social.title} />
 						<div className="my-3 flex flex-col gap-6 list-none cursor-pointer">
 							{links['Social'].links.map((item: any, i: number) => (
-								<a target="_blank" href={item.link} key={i}>
-									{item.icon}
+								<a target="_blank" className="flex items-center space-x-4" href={item.link} key={i}>
+									{item.icon} <span>{item.text}</span>
 								</a>
 							))}
 						</div>

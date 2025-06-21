@@ -83,12 +83,9 @@ const page = () => {
 					</div>
 				</div>
 			</div>
-
 			<div>
 				<Heading title={'Why Choose Us'} />
-
 				<Description text="At I-Tech Institute of Computers, we take pride in being ISO 9001:2015 certified and IAF (International Accreditation Forum) verified, ensuring that we meet the highest global standards in education and training services." />
-
 				<div className="flex flex-col md:flex-row items-center justify-evenly gap-5 p-4 ">
 					<Image
 						src={'/images/IAS.png'}
@@ -120,10 +117,10 @@ const page = () => {
 					/>
 				</div>
 			</div>
-
-			<div className=" flex flex-col md:flex-row  items-center justify-evenly gap-36 mb-40 md:mt-10">
+			<div className="w-full flex flex-col lg:flex-row  lg:items-center justify-between gap-5 mb-20 md:mt-10">
 				{branches.map((item, i) => (
 					<OtherBranch
+						key={i}
 						imagePath={item.imagePath}
 						title={item.title}
 						address={item.address}
@@ -131,8 +128,7 @@ const page = () => {
 					/>
 				))}
 			</div>
-
-			<div className="w-full mt-52">
+			<div className="w-full">
 				<Heading title={'Join Us Today'} />
 				<h1 className="text-center text-3xl md:text-5xl my-5">Learn. Evolve. Grow.</h1>
 				<Description text="Join I-Tech to explore emerging technologies, real-time projects, and a culture built around progress, purpose and possibility here are some few insights from us." />

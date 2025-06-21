@@ -38,7 +38,7 @@ const Heading = ({ title, className }: HeadingProps) => {
 						},
 					},
 				}}
-				className={`font-inter text-white font-extrabold text-2xl lg:text-4xl text-center ${className}`}
+				className={`${className} font-inter text-white font-extrabold text-2xl lg:text-4xl text-center `}
 			>
 				{title}
 			</motion.h1>

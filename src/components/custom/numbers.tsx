@@ -37,8 +37,7 @@ const Numbers = () => {
 		<Container className="my-5">
 			<div
 				ref={ref}
-				className="w-full lg:w-[95%] h-[90px] lg:h-[181px] rounded-[30px] md:rounded-[35px] bg-white/30 backdrop-blur-lg border-white/30 shadow-lg mx-auto flex items-center justify-evenly border-[1px] border-b-primary-links"
-			>
+				className="w-full lg:w-[96%] h-[90px] lg:h-[181px] rounded-[30px] md:rounded-[35px] bg-white/30 backdrop-blur-lg border-white/30 shadow-lg mx-auto flex items-center justify-evenly border-[1px] border-b-primary-links">
 				{data.map((item: any, i: any) => (
 					<div key={i} className="flex flex-col items-center justify-center">
 						<span className="text-[16px] md:text-[20px] lg:text-[40px] font-bold text-center">
