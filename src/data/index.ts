@@ -293,3 +293,19 @@ export const HomePageCards = [
 			'Comprehensive training on leveraging Excel’s advanced features, empowering professionals to perform high-level data analysis and streamline reporting processes.',
 	},
 ]
+
+export const branches = [
+	{
+		imagePath: 'other_branch1.jpeg',
+		title: 'I-Tech RT Nagar Branch (Main Branch)',
+		address: '2, JC Nagar Main Rd, Ganganagar, RT nagar Bengaluru, Karnataka 560032',
+		phone: ['+91 9845193425', '+91 7892537944'],
+	},
+	{
+		imagePath: 'other_branch2.jpeg',
+		title: 'I-Tech CHIKKABANAVARA Branch',
+		address:
+			'1st floor, opp to sri chamundeshwari petrol bunk, chikkabanavara, hesaraghatta main road, Bangalore - 560090',
+		phone: ['+91 9845751732', '+91 7019166910'],
+	},
+]

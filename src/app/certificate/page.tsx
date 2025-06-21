@@ -21,7 +21,7 @@ const page = () => {
 			</div>
 			<SearchBar search={search} setSearch={setSearch} />
 			<div className="w-full">
-				<StudentList year={year} page={page} search={search} onPageChange={setPage} />
+				<StudentList year={year} page={page} onPageChange={setPage} />
 			</div>
 		</Container>
 	)

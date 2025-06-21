@@ -14,7 +14,7 @@ import Image from 'next/image'
 const page = () => {
 	return (
 		<Container>
-			<div>
+			<div className='my-2'>
 				<Heading title={'Contact Us'} />
 				<Description text="Any question or remarks? Just write us a message!" />
 			</div>
@@ -60,12 +60,6 @@ const page = () => {
 							<CustomInput title="Email" />
 							<CustomInput title="Phone Number" />
 						</div>
-						<div className="mt-5">
-							<h1 className="text-primary-links">Select Subject?</h1>
-							<div className="flex gap-3 items-center">
-							</div>
-						</div>
-
 						<CustomTextArea />
 						<div className="my-3 flex justify-end">
 							<Button

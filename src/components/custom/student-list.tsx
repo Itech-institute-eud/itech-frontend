@@ -1,11 +1,9 @@
 'Use Clinet'
 
 import { useEffect, useState } from 'react'
-
 import {
 	Table,
 	TableBody,
-	TableCaption,
 	TableCell,
 	TableHead,
 	TableHeader,
@@ -13,14 +11,15 @@ import {
 } from '@/components/ui/table'
 import Pagination from './pagination'
 import Loading from './loading'
+import { useAtom } from 'jotai'
+import { studentAtom } from '@/jotai/student-atom'
 
 interface IStudent {
 	_id: string
 	name: string
-	courses: string[] // Replace `any` with a specific type if you know the structure of the course objects
+	courses: string[]
 	armyNo: string
-	monthAndYear: string // ISO date string (e.g., '2025-01-30')
-	email: string
+	monthAndYear: string
 	totalCertificates: number
 }
 
@@ -30,17 +29,16 @@ export interface IResponse {
 	currentPage: number
 }
 
-const StudentList = ({ year, page, search, onPageChange }: any) => {
-	const [data, setData] = useState<IResponse | null>(null) // Store the fetched data
-	const [loading, setLoading] = useState(true) // Track loading state
-	const [error, setError] = useState(null) // Track any error
+const StudentList = ({ year, page, onPageChange }: any) => {
+	const [data, setData] = useAtom(studentAtom)
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const params = new URLSearchParams({
 				year,
 				page,
-				search,
 			})
 
 			try {
