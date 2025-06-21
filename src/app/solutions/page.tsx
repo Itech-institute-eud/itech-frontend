@@ -47,17 +47,17 @@ const page = () => {
 			</div>
 			<Heading title={'OUR TECH STACK'} />
 			<Description text="we focus on emerging technologies for building high performing web and mobile products that can be securely deployed in the cloud" />
-
+			<div className="flex items-center flex-col md:flex-row justify-evenly w-60% mx-auto my-3">
+				<Image height={100} width={100} src={'/images/tech-stack/js.png'} alt="js" />
+				<Image height={100} width={100} src={'/images/tech-stack/html.png'} alt="nodejs" />
+				<Image height={100} width={100} src={'/images/tech-stack/go.png'} alt="js" />
+				<Image height={100} width={100} src={'/images/tech-stack/python.png'} alt="js" />
+				<Image height={100} width={100} src={'/images/tech-stack/css.png'} alt="js" />
+			</div>
 			<Container>
-				<div className="w-fit m-auto flex flex-col md:flex-row items-center justify-center bg-black/50 p-5 rounded-xl gap-2.5">
+				<div className="w-fit m-auto flex flex-col md:flex-row items-center justify-center bg-white/20 p-5 rounded-2xl gap-2.5">
 					<div>
-						<Image
-							height={500}
-							width={500}
-							src={'/images/solutions.jpg'}
-							alt="solutions"
-							className="opacity-70"
-						/>
+						<Image height={500} width={500} src={'/images/solutions.png'} alt="solutions" />
 					</div>
 					<div className=" flex flex-col items-center justify-center">
 						<Heading title={'Lets bring your technical imagination to reality'} />

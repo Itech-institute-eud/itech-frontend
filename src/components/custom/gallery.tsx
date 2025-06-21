@@ -14,7 +14,7 @@ import { galleryImages } from '@/data'
 
 const Gallery = () => {
 	return (
-		<div className="my-4 overflow-x-auto">
+		<div className="my-4 overflow-x-hidden">
 			<div className="w-full md:w-[70%] mx-auto">
 				<Carousel
 					plugins={[

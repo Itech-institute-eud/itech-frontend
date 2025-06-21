@@ -8,15 +8,14 @@ const Contact = () => {
 	return (
 		<Container className="flex flex-col lg:flex-row items-center justify-between text-white lg:max-w-[90%]">
 			<div className="hidden lg:flex lg:flex-1/2 p-5">
-				<div className="relative w-full h-56 md:h-64 lg:h-72">
 					<Image
 						alt={'contact'}
-						src={'/images/contactUs.jpeg'}
+						src={'/images/contactUs.png'}
 						sizes="auto"
-						layout="fill"
 						objectFit="cover"
+						width={400}
+						height={400}
 					/>
-				</div>
 			</div>
 			<div className="flex-1/2 bg-black/30 p-5 rounded-2xl shadow-md">
 				<Heading className="text-start font-semibold" title={'Contact us'} />

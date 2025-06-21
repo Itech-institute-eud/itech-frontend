@@ -12,6 +12,7 @@ import {
 	TableRow,
 } from '@/components/ui/table'
 import Pagination from './pagination'
+import Loading from './loading'
 
 interface IStudent {
 	_id: string
@@ -57,7 +58,7 @@ const StudentList = ({ year, page, search, onPageChange }: any) => {
 		fetchData()
 	}, [year, page])
 
-	if (loading) return <p>Loading...</p>
+	if (loading) return <Loading />
 	if (error) return <p>Error: {error}</p>
 
 	return (
